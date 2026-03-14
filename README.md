@@ -66,6 +66,11 @@ Uygulama, kurumsal süreklilik ve e-mail verimliliği için şu mantıkla çalı
 - **Anti-Spam (30 Dakika)**: Bir cihaz down kalmaya devam ederse, her döngüde mail atmak yerine 30 dakikada bir hatırlatma maili gönderir.
 - **Kurtarma (Recovery)**: Cihaz tekrar erişilebilir olduğunda anında yeşil renkli bir düzelme bildirimi gönderilir.
 
+**Örnek e-mail görüntüleri**:
+![sample](https://github.com/abdullah-erturk/Ping-Monitor/blob/main/down.jpg)
+
+![sample](https://github.com/abdullah-erturk/Ping-Monitor/blob/main/up.jpg)
+
 ---
 
 </details>
@@ -110,6 +115,10 @@ The application operates with the following logic for enterprise continuity and 
 - **Anti-Spam (30 Minutes)**: If a device remains down, the system sends reminder emails every 30 minutes instead of every cycle.
 - **Recovery**: As soon as a device becomes reachable again, a green-themed recovery notification is sent instantly.
 
+**Sample e-mail images**:
+![sample](https://github.com/abdullah-erturk/Ping-Monitor/blob/main/down.jpg)
+
+![sample](https://github.com/abdullah-erturk/Ping-Monitor/blob/main/up.jpg)
 ---
 </details>
 
