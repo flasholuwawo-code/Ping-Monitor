@@ -12,10 +12,10 @@
 
 ![sample](https://github.com/abdullah-erturk/Ping-Monitor/blob/main/preview.jpg)
 
-### Nedir
+### Nedir?
 Bu proje, hedef cihazları ve internet servislerini eş zamanlı olarak takip eden, kesinti durumunda anlık e-mail bildirimleri gönderen kurumsal izleme hizmetidir.
 
-### What is it
+### What is it?
 This project is an enterprise monitoring service that simultaneously tracks target devices and internet services, sending instant email notifications in case of outages.
 
 </div>
