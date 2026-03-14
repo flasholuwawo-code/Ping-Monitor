@@ -67,6 +67,7 @@ Uygulama, kurumsal süreklilik ve e-mail verimliliği için şu mantıkla çalı
 - **Kurtarma (Recovery)**: Cihaz tekrar erişilebilir olduğunda anında yeşil renkli bir düzelme bildirimi gönderilir.
 
 **Örnek e-mail görüntüleri**:
+
 ![sample](https://github.com/abdullah-erturk/Ping-Monitor/blob/main/down.jpg)
 
 ![sample](https://github.com/abdullah-erturk/Ping-Monitor/blob/main/up.jpg)
@@ -116,6 +117,7 @@ The application operates with the following logic for enterprise continuity and 
 - **Recovery**: As soon as a device becomes reachable again, a green-themed recovery notification is sent instantly.
 
 **Sample e-mail images**:
+
 ![sample](https://github.com/abdullah-erturk/Ping-Monitor/blob/main/down.jpg)
 
 ![sample](https://github.com/abdullah-erturk/Ping-Monitor/blob/main/up.jpg)
